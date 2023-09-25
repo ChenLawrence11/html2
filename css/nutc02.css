@@ -1,0 +1,72 @@
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Microsoft JhengHei";
+}
+
+/* 網頁主區塊 */
+#wrapper {
+  text-align: center;
+}
+
+/* 導覽區塊 */
+.menu-nav {
+  width: 70%;
+  display: inline-block;
+}
+
+/* 第一層ul */
+.menu-parent {
+  cursor: pointer;
+  width: 100%;
+  padding: 0px;
+  white-space: nowrap; /*永不換行*/
+}
+
+/* 第一層li */
+.menu-parent-list {
+  list-style: none;
+  width: 15%;
+  height: 30px;
+  border: 1px solid #444;
+  background-color: #888;
+  line-height: 30px;
+  color: #fff;
+  float: left;
+}
+
+/* 第二層ul */
+.menu-child0 {
+  text-align: left;
+  white-space: normal; /* 回到原本換行的樣式 */
+  display: none;
+  list-style: none;
+  padding: 0px;
+}
+
+/* 第二層li */
+.menu-child0-list {
+  position: relative;
+  border: 1px solid #444;
+  background-color: #ddd;
+  color: #000;
+}
+
+/* 第三層ul */
+.menu-child1 {
+  white-space: nowrap; /*永不換行*/
+  display: none;
+  position: absolute;
+  list-style: none;
+  padding: 0px;
+  left: 100%;
+  top: 0px;
+}
+
+/* 第三層li */
+.menu-child1-list {
+  border: 1px solid #444;
+  background-color: #ddd;
+  color: #000;
+}
